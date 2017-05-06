@@ -19,4 +19,11 @@ usersRouter.post('/register',function(req, res, next) {
 	});
 });
 
+usersRouter.get('/search',function(req, res, next){
+	Details.find({}).exec(function(err, detail){
+		if(err) throw err;
+		res.json(detail);
+	});
+});
+
 module.exports = usersRouter;
