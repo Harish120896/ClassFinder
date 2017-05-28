@@ -8,7 +8,7 @@ var classschema = new Schema({
 	}
 });
 
-var Classes = mongoose.model('Class',classschema);
+var Classes = mongoose.model('NClass',classschema);
 
 module.exports = Classes;
 
