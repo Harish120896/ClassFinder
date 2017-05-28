@@ -27,7 +27,7 @@ classesRouter.post('/dance',function(req, res, next) {
 });
 
 classesRouter.get('/music',function(req, res, next) {
-	Classes.find({classname:"music"}).exec(function(err, classes){
+	Classes.find().exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
