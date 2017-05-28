@@ -5,18 +5,6 @@ var classschema = new Schema({
 	classname:{
 		type:String,
 		require:true
-	},
-	institutename:{
-	type:String,
-	required:true
-	},
-	location:{
-	type:String,
-	required:true
-	},
-	contact :{
-	type:Number,
-	required:true
 	}
 });
 
